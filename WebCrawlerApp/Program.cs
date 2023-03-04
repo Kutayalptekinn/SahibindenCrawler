@@ -59,7 +59,7 @@ namespace WebCrawlerApp
                     // Rastgele bir Gecikme ekleme
                     int delay = rand.Next(minDelay, maxDelay); // Rastgele bir gecikme belirleyin (500-1500ms)
                     Thread.Sleep(delay); // Gecikmeyi uygulayın
-                    //"https://www.sahibinden.com/" adresine bir istek gönderir.
+                    //"sahibinden.com/" adresine bir istek gönderir.
                     WebPage webPage = scrapingBrowser.NavigateToPage(new Uri("https://www.sahibinden.com/"));
                     //Eğer istek başarılı olursa, "WebPage" nesnesi içindeki HTML içeriği döndürülür.
                     if (webPage != null)
@@ -171,6 +171,7 @@ namespace WebCrawlerApp
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("Ürünler çekiliyor lütfen bekleyiniz ...");
             //masaüstünde oluşturulacak
             //dosya ismi verilir
             string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\productDetails.txt";
