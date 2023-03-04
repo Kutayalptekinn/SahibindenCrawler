@@ -171,7 +171,7 @@ namespace WebCrawlerApp
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Ürünler çekiliyor lütfen bekleyiniz ...");
+            Console.WriteLine("Ürünler çekiliyor lütfen bekleyiniz ... (Bekleme işlemi eklenilen gecikmeler yüzünden 7-8 dkye kadar çıkabilir)");
             //masaüstünde oluşturulacak
             //dosya ismi verilir
             string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\productDetails.txt";
